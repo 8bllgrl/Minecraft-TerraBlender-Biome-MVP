@@ -20,7 +20,7 @@
           "max_delay": 24000,
           "min_delay": 12000,
           "replace_current_music": false,
-          "sound": "biomesoplenty:music.nether.visceral_heap"
+          "sound": "tutorialmod:music.nether.visceral_heap"
         },
         "weight": 1
       }
@@ -48,15 +48,15 @@
       "minecraft:ore_quartz_nether",
       "minecraft:ore_ancient_debris_large",
       "minecraft:ore_debris_small",
-      "biomesoplenty:blood_lake",
-      "biomesoplenty:blood_spring",
-      "biomesoplenty:nether_bone_spine",
-      "biomesoplenty:flesh_tendon",
-      "biomesoplenty:hanging_flesh_tendons",
-      "biomesoplenty:porous_flesh",
-      "biomesoplenty:pus_bubbles",
-      "biomesoplenty:eyebulb",
-      "biomesoplenty:hair"
+      "tutorialmod:blood_lake",
+      "tutorialmod:blood_spring",
+      "tutorialmod:nether_bone_spine",
+      "tutorialmod:flesh_tendon",
+      "tutorialmod:hanging_flesh_tendons",
+      "tutorialmod:porous_flesh",
+      "tutorialmod:pus_bubbles",
+      "tutorialmod:eyebulb",
+      "tutorialmod:hair"
     ]
   ],
   "has_precipitation": false,

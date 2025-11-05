@@ -1,0 +1,20 @@
+{
+  "type": "tutorialmod:lake",
+  "config": {
+    "barrier": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "tutorialmod:flesh"
+      }
+    },
+    "fluid": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "tutorialmod:blood",
+        "Properties": {
+          "level": "0"
+        }
+      }
+    }
+  }
+}
