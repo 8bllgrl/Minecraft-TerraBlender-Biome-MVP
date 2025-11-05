@@ -1,0 +1,10 @@
+{
+    "variants": {
+		"": [
+            { "model": "tutorialmod:block/porous_flesh" },
+            { "model": "tutorialmod:block/porous_flesh", "y": 90 },
+            { "model": "tutorialmod:block/porous_flesh", "y": 180 },
+            { "model": "tutorialmod:block/porous_flesh", "y": 270 }
+        ]
+    }
+}
