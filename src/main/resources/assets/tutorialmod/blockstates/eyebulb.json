@@ -1,0 +1,16 @@
+{
+    "variants": {
+        "half=lower": [
+			{ "model": "tutorialmod:block/eyebulb_bottom" },
+			{ "model": "tutorialmod:block/eyebulb_bottom_closed" },
+			{ "model": "tutorialmod:block/eyebulb_bottom" },
+			{ "model": "tutorialmod:block/eyebulb_bottom_closed" }
+		],
+        "half=upper": [
+			{ "model": "tutorialmod:block/eyebulb_top" },
+			{ "model": "tutorialmod:block/eyebulb_top_closed" },
+			{ "model": "tutorialmod:block/eyebulb_top_closed" },
+			{ "model": "tutorialmod:block/eyebulb_top" }
+		]
+    }
+}
