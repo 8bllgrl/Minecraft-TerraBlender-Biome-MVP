@@ -32,6 +32,7 @@ public class ModBlocks {
     public static void setup(BiConsumer<ResourceLocation, Block> func) {
         registerBlocks(func);
         registerSurfaceRules();
+        //// registerSurfaceRules(); -- Delete or comment out call for MVP clarity // why did gemini say this?
     }
 
     private static void registerSurfaceRules() {
@@ -39,6 +40,7 @@ public class ModBlocks {
     }
 
     private static void registerBlocks(BiConsumer<ResourceLocation, Block> func) {
+        //redwood
         REDWOOD_SAPLING = register(func, new SaplingBlockBOP(BOPTreeGrowers.REDWOOD, BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).pushReaction(PushReaction.DESTROY).noCollission().randomTicks().instabreak().sound(SoundType.GRASS)), "redwood_sapling");
         REDWOOD_LEAVES = register(func, new LeavesBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).pushReaction(PushReaction.DESTROY).strength(0.2F).randomTicks().sound(SoundType.GRASS).noOcclusion().isValidSpawn(ModBlocks::ocelotOrParrot).isSuffocating(ModBlocks::never).isViewBlocking(ModBlocks::never).ignitedByLava().isRedstoneConductor(ModBlocks::never)), "redwood_leaves");
         REDWOOD_LOG = register(func, log(MapColor.CRIMSON_NYLIUM, MapColor.TERRACOTTA_ORANGE, SoundType.WOOD), "redwood_log");
@@ -49,6 +51,19 @@ public class ModBlocks {
         DEAD_BRANCH = register(func, new DeadBranchBlock(BlockBehaviour.Properties.of().pushReaction(PushReaction.DESTROY).mapColor(MapColor.COLOR_GRAY).ignitedByLava().noCollission().instabreak().sound(SoundType.WOOD)), "dead_branch");
         DEAD_LOG = register(func, log(MapColor.STONE, MapColor.COLOR_GRAY, SoundType.WOOD), "dead_log");
         DEAD_WOOD = register(func, new RotatedPillarBlock(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASS).ignitedByLava().mapColor(MapColor.COLOR_GRAY).strength(2.0F).sound(SoundType.WOOD)), "dead_wood");
+
+        //nether
+        BLOOD = register(func, new BloodBlock(BOPFluids.FLOWING_BLOOD, BlockBehaviour.Properties.of().replaceable().pushReaction(PushReaction.DESTROY).liquid().noCollission().mapColor(MapColor.CRIMSON_NYLIUM).sound(SoundType.EMPTY).strength(100.0F)), "blood");
+        FLESH = register(func, new FleshBlock(BlockBehaviour.Properties.of().randomTicks().mapColor(MapColor.TERRACOTTA_RED).strength(0.4F)), "flesh");
+        POROUS_FLESH = register(func, new FleshBlock(BlockBehaviour.Properties.of().randomTicks().mapColor(MapColor.TERRACOTTA_RED).strength(0.4F)), "porous_flesh");
+        FLESH_TENDONS = register(func, new FleshTendonsBottomBlock(BlockBehaviour.Properties.of().pushReaction(PushReaction.DESTROY).mapColor(MapColor.TERRACOTTA_RED).noCollission().strength(0.2F)), "flesh_tendons");
+        FLESH_TENDONS_STRAND = register(func, new FleshTendonsBlock(BlockBehaviour.Properties.of().pushReaction(PushReaction.DESTROY).mapColor(MapColor.TERRACOTTA_RED).noCollission().strength(0.2F)), "flesh_tendons_strand");
+        EYEBULB = register(func, new EyebulbBlock(BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_RED).pushReaction(PushReaction.DESTROY).noCollission().strength(0.2F)), "eyebulb");
+        HAIR = register(func, new HairBlock(BlockBehaviour.Properties.of().mapColor(MapColor.RAW_IRON).pushReaction(PushReaction.DESTROY).noCollission().instabreak().sound(SoundType.WOOL)), "hair");
+        PUS_BUBBLE = register(func, new PusBubbleBlock(BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_PINK).pushReaction(PushReaction.DESTROY).noCollission().instabreak()), "pus_bubble");
+        // TODO: I am unsure if these are visceral heap decor
+        // BLACKSTONE_SPINES = register(func, new BlackstoneDecorationBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_BLACK).pushReaction(PushReaction.DESTROY).noCollission().strength(0.2F)), "blackstone_spines");
+        // BLACKSTONE_BULB = register(func, new BlackstoneDecorationBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_BLACK).pushReaction(PushReaction.DESTROY).noCollission().strength(0.2F).lightLevel((state) -> 2)), "blackstone_bulb");
     }
 
     private static RotatedPillarBlock log(MapColor MapColor, MapColor MapColor2, SoundType soundType) {
