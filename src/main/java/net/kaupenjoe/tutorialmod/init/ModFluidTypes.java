@@ -1,6 +1,9 @@
 package net.kaupenjoe.tutorialmod.init;
 
+import net.kaupenjoe.tutorialmod.BiomesOPlentyForge;
+import net.kaupenjoe.tutorialmod.api.block.BOPBlocks;
 import net.minecraft.client.Camera;
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.core.BlockPos;
 import net.minecraft.resources.ResourceKey;

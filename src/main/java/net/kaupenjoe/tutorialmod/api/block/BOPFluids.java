@@ -1,4 +1,4 @@
-package biomesoplenty.api.block;
+package net.kaupenjoe.tutorialmod.api.block;
 
 import net.minecraft.world.level.material.FlowingFluid;
 import net.minecraft.world.level.material.Fluid;
