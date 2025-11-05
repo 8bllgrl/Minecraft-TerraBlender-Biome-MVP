@@ -24,7 +24,7 @@ public class TutorialMod
         ModBiomes.setup();
         ModTags.setup();
         addRegistrars();
-        addHandlers();
+        addHandlers();bopnet
     }
 
         private static void addRegistrars()
@@ -57,6 +57,8 @@ public class TutorialMod
     public static void setupTerraBlender()
     {
         ModBiomes.setupTerraBlender();
+        // //apparently i do this? refer to common/src/main/java/biomesoplenty/init/ModBiomes.java in https://github.com/Glitchfiend/BiomesOPlenty/
+        // Regions.register(new BOPNetherRegionCommon(13));
     }
 
 }

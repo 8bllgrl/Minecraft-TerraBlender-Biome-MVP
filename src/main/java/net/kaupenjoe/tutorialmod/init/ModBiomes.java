@@ -32,6 +32,9 @@ public class ModBiomes {
         Regions.register(new BOPOverworldRegionPrimary(ModConfig.generation.bopPrimaryOverworldRegionWeight));
         Regions.register(new BOPOverworldRegionSecondary(ModConfig.generation.bopSecondaryOverworldRegionWeight));
         Regions.register(new BOPOverworldRegionRare(ModConfig.generation.bopOverworldRareRegionWeight));
+
+        //apparently i do this? refer to common/src/main/java/biomesoplenty/init/ModBiomes.java in https://github.com/Glitchfiend/BiomesOPlenty/
+        Regions.register(new BOPNetherRegionCommon(13));
     }
 
     //NeoForge

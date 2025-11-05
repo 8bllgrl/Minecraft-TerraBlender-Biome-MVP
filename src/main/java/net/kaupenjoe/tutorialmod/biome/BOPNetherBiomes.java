@@ -17,6 +17,7 @@ import net.minecraft.world.level.levelgen.GenerationStep;
 import net.minecraft.world.level.levelgen.carver.ConfiguredWorldCarver;
 import net.minecraft.world.level.levelgen.placement.PlacedFeature;
 import net.kaupenjoe.tutorialmod.worldgen.BOPNetherPlacements; // need to make sure this exists
+import net.minecraft.world.level.biome.MobSpawnSettings;
 
 public class BOPNetherBiomes
 {
