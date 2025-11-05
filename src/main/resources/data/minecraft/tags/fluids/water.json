@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "tutorialmod:blood",
+    "tutorialmod:flowing_blood",
+	"tutorialmod:liquid_null",
+    "tutorialmod:flowing_liquid_null"
+  ]
+}
