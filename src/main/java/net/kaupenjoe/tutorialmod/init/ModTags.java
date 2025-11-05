@@ -21,6 +21,7 @@ public class ModTags
     {
         private static void setup() {}
 
+        // overworld
         public static final TagKey<Block> FIR_LOGS = create(new ResourceLocation(TutorialMod.MOD_ID, "fir_logs"));
         public static final TagKey<Block> PINE_LOGS = create(new ResourceLocation(TutorialMod.MOD_ID, "pine_logs"));
         public static final TagKey<Block> MAPLE_LOGS = create(new ResourceLocation(TutorialMod.MOD_ID, "maple_logs"));
@@ -45,6 +46,13 @@ public class ModTags
         public static final TagKey<Block> NULL_PLACEABLE = create(new ResourceLocation(TutorialMod.MOD_ID, "null_replaceable"));
         public static final TagKey<Block> NULL_REPLACEABLE = create(new ResourceLocation(TutorialMod.MOD_ID, "null_replaceable"));
         public static final TagKey<Block> TIDEPOOL_REPLACEABLE = create(new ResourceLocation(TutorialMod.MOD_ID, "tidepool_replaceable"));
+
+        //nether
+        public static final TagKey<Block> FLESH = create(new ResourceLocation(BiomesOPlenty.MOD_ID, "flesh"));
+        public static final TagKey<Block> FLESH_DECORATION_PLACEABLE = create(new ResourceLocation(BiomesOPlenty.MOD_ID, "flesh_decoration_placeable"));
+        //TODO: unsure if blackstone is needed 
+        // public static final TagKey<Block> BLACKSTONE_DECORATION_PLACEABLE = create(new ResourceLocation(BiomesOPlenty.MOD_ID, "blackstone_decoration_placeable"));
+
 
         public static TagKey<Block> create(ResourceLocation name)
         {
