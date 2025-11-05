@@ -1,4 +1,4 @@
-package biomesoplenty.block;
+package net.kaupenjoe.tutorialmod.block;
 
 import net.minecraft.world.level.block.BucketPickup;
 import net.minecraft.world.level.block.LiquidBlock;

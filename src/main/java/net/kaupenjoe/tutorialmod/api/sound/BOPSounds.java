@@ -1,4 +1,4 @@
-package biomesoplenty.api.sound;
+package net.kaupenjoe.tutorialmod.api.sound;
 
 import net.minecraft.core.Holder;
 import net.minecraft.sounds.SoundEvent;

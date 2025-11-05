@@ -21,7 +21,7 @@ public class BOPBlocks {
     public static Block FLESH_TENDONS;
     public static Block FLESH_TENDONS_STRAND;
     public static Block EYEBULB;
-    public static Block HAIR;BloodFluid
+    public static Block HAIR;
     public static Block PUS_BUBBLE;
     //Are these needed?
     // public static Block BLACKSTONE_SPINES; 

@@ -20,11 +20,11 @@ public class TutorialMod
     {
         // Initialize the config file first so other things can rely on it
         ModConfig.setup();
-        ModFluidTypes.setup();
+        biomesoplenty.forge.init.ModFluidTypes.setup();
         ModBiomes.setup();
         ModTags.setup();
         addRegistrars();
-        addHandlers();bopnet
+        addHandlers();
     }
 
         private static void addRegistrars()
@@ -39,7 +39,7 @@ public class TutorialMod
             regHelper.addRegistrar(Registries.CARVER, BOPWorldCarvers::registerCarvers);
         //    regHelper.addRegistrar(Registries.ENTITY_TYPE, ModEntities::registerEntities);
             regHelper.addRegistrar(Registries.CREATIVE_MODE_TAB, ModCreativeTab::registerCreativeTabs);
-            regHelper.addRegistrar(Registries.PARTICLE_TYPE, ModParticles::registerParticles); // <-- Uncommented
+            regHelper.addRegistrar(Registries.PARTICLE_TYPE, biomesoplenty.init.ModParticles::registerParticles); // <-- Uncommented
         //    regHelper.addRegistrar(Registries.SOUND_EVENT, ModSounds::registerSounds); // <-- Uncommented (Assuming ModSounds exists)
         }
 
