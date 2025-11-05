@@ -13,6 +13,8 @@ public class BOPBiomes {
     private static List<ResourceKey<Biome>> allBiomes = Lists.newArrayList();
 
     public static final ResourceKey<Biome> REDWOOD_FOREST = registerOverworld("redwood_forest");
+    public static final ResourceKey<Biome> VISCERAL_HEAP = register("visceral_heap");
+
 
     public static List<ResourceKey<Biome>> getOverworldBiomes()
     {
