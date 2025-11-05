@@ -32,15 +32,15 @@ public class TutorialMod
         //TODO: build up over time.
         var regHelper = RegistryHelper.create();
         regHelper.addRegistrar(Registries.BLOCK, ModBlocks::setup);
-//        regHelper.addRegistrar(Registries.BLOCK_ENTITY_TYPE, ModBlockEntities::registerBlockEntities);
-//        regHelper.addRegistrar(Registries.FLUID, ModFluids::registerFluids);
+    //    regHelper.addRegistrar(Registries.BLOCK_ENTITY_TYPE, ModBlockEntities::registerBlockEntities);
+        regHelper.addRegistrar(Registries.FLUID, ModFluids::registerFluids); // <-- Uncommented
         regHelper.addRegistrar(Registries.ITEM, ModItems::setup);
         regHelper.addRegistrar(Registries.FEATURE, BOPBaseFeatures::registerFeatures);
         regHelper.addRegistrar(Registries.CARVER, BOPWorldCarvers::registerCarvers);
-//        regHelper.addRegistrar(Registries.ENTITY_TYPE, ModEntities::registerEntities);
+    //    regHelper.addRegistrar(Registries.ENTITY_TYPE, ModEntities::registerEntities);
         regHelper.addRegistrar(Registries.CREATIVE_MODE_TAB, ModCreativeTab::registerCreativeTabs);
-//        regHelper.addRegistrar(Registries.PARTICLE_TYPE, ModParticles::registerParticles);
-//        regHelper.addRegistrar(Registries.SOUND_EVENT, ModSounds::registerSounds);
+        regHelper.addRegistrar(Registries.PARTICLE_TYPE, ModParticles::registerParticles); // <-- Uncommented
+    //    regHelper.addRegistrar(Registries.SOUND_EVENT, ModSounds::registerSounds); // <-- Uncommented (Assuming ModSounds exists)
     }
 
     private static void addHandlers()
