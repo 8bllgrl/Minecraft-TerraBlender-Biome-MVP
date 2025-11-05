@@ -2,6 +2,7 @@ package net.kaupenjoe.tutorialmod;
 
 import glitchcore.forge.GlitchCoreForge;
 import net.kaupenjoe.tutorialmod.init.ModClient;
+import net.kaupenjoe.tutorialmod.forge.init.ModFluidTypes; // <-- NEW: Import the FluidTypes class
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fluids.FluidType;
 import net.minecraftforge.fml.common.Mod;
@@ -14,6 +15,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 @Mod(value = TutorialMod.MOD_ID)
 public class BiomesOPlentyForge
 {
+    // Register is static and shared
     public static final DeferredRegister<FluidType> FORGE_FLUID_REGISTER = DeferredRegister.create(ForgeRegistries.Keys.FLUID_TYPES, TutorialMod.MOD_ID);
 
     @SuppressWarnings("all")
@@ -28,15 +30,19 @@ public class BiomesOPlentyForge
         TutorialMod.init();
         GlitchCoreForge.prepareModEventHandlers(bus);
 
-//        ModFluidTypes.setup();
+        // [MODIFICATION 1]: Call setup() to register the Blood FluidType (Forge-side)
+        ModFluidTypes.setup();
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
         event.enqueueWork(() ->
         {
+            // [MODIFICATION 2]: Calls the common setup to register the Nether Region with TerraBlender.
             TutorialMod.setupTerraBlender();
-//            ModFluidTypes.registerFluidInteractions();
+            
+            // [MODIFICATION 3]: Registers the Forge fluid interaction event (liquids -> Flesh).
+            ModFluidTypes.registerFluidInteractions();
         });
     }
 
