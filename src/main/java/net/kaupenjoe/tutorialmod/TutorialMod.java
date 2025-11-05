@@ -20,7 +20,7 @@ public class TutorialMod
     {
         // Initialize the config file first so other things can rely on it
         ModConfig.setup();
-        biomesoplenty.forge.init.ModFluidTypes.setup();
+        ModFluidTypes.setup();
         ModBiomes.setup();
         ModTags.setup();
         addRegistrars();
