@@ -1,11 +1,12 @@
 package biomesoplenty.block;
 
-import biomesoplenty.api.block.BOPBlocks;
 import biomesoplenty.api.block.BOPFluids;
-import biomesoplenty.api.item.BOPItems;
-import biomesoplenty.api.sound.BOPSounds;
 import biomesoplenty.init.ModParticles;
-import biomesoplenty.init.ModTags;
+import net.kaupenjoe.tutorialmod.api.block.BOPBlocks;
+import net.kaupenjoe.tutorialmod.api.item.BOPItems;
+import net.kaupenjoe.tutorialmod.api.sound.BOPSounds;
+import net.kaupenjoe.tutorialmod.init.ModFluidTypes;
+import net.kaupenjoe.tutorialmod.init.ModTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.particles.ParticleOptions;
@@ -27,6 +28,7 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.material.FlowingFluid;
 import net.minecraft.world.level.material.Fluid;
 import net.minecraft.world.level.material.FluidState;
+import net.minecraftforge.fluids.FluidType;
 
 import javax.annotation.Nullable;
 import java.util.Optional;
@@ -40,7 +42,7 @@ public abstract class BloodFluid extends FlowingFluid
     public FluidType getFluidType() // <-- Directly implement the required method
     {
         // Links to the FluidType object registered in your ModFluidTypes
-        return ModFluidTypes.BLOOD_TYPE.get(); 
+        return ModFluidTypes.BLOOD_TYPE.get();
     }
     
     @Override

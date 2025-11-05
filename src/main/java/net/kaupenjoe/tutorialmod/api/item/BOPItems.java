@@ -17,5 +17,16 @@ public class BOPItems {
     public static Item DEAD_WOOD;
     public static Item DEAD_LOG;
 
+    //nether
+    public static Item FLESH;
+    public static Item POROUS_FLESH;
+    public static Item FLESH_TENDONS;
+    public static Item FLESH_TENDONS_STRAND;
+    public static Item EYEBULB;
+    public static Item HAIR;
+    public static Item PUS_BUBBLE;
+    public static Item BLOOD;
+    public static Item BLOOD_BUCKET;
+
 
 }

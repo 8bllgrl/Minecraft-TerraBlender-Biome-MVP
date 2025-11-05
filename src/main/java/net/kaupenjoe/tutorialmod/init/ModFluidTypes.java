@@ -1,7 +1,5 @@
-package biomesoplenty.forge.init;
+package net.kaupenjoe.tutorialmod.init;
 
-import biomesoplenty.api.block.BOPBlocks;
-import biomesoplenty.forge.core.BiomesOPlentyForge;
 import net.minecraft.client.Camera;
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.core.BlockPos;
@@ -11,7 +9,6 @@ import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.material.FluidState;
-import net.minecraft.world.level.pathfinder.PathType;
 import net.minecraftforge.client.extensions.common.IClientFluidTypeExtensions;
 import net.minecraftforge.common.ForgeMod;
 import net.minecraftforge.common.SoundActions;

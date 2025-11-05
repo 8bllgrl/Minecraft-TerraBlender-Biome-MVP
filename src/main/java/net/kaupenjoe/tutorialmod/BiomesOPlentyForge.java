@@ -2,7 +2,7 @@ package net.kaupenjoe.tutorialmod;
 
 import glitchcore.forge.GlitchCoreForge;
 import net.kaupenjoe.tutorialmod.init.ModClient;
-import net.kaupenjoe.tutorialmod.forge.init.ModFluidTypes; // <-- NEW: Import the FluidTypes class
+import net.kaupenjoe.tutorialmod.init.ModFluidTypes;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fluids.FluidType;
 import net.minecraftforge.fml.common.Mod;
