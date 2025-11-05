@@ -1,0 +1,14 @@
+{
+    "variants": {
+		"": [
+            { "model": "tutorialmod:block/flesh" },
+            { "model": "tutorialmod:block/flesh", "y": 90 },
+            { "model": "tutorialmod:block/flesh", "y": 180 },
+            { "model": "tutorialmod:block/flesh", "y": 270 },
+			{ "model": "tutorialmod:block/flesh_alt" },
+            { "model": "tutorialmod:block/flesh_alt", "y": 90 },
+            { "model": "tutorialmod:block/flesh_alt", "y": 180 },
+            { "model": "tutorialmod:block/flesh_alt", "y": 270 }
+        ]
+    }
+}
