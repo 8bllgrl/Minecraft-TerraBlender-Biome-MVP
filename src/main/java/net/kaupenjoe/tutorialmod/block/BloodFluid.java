@@ -34,6 +34,15 @@ import java.util.Optional;
 //TODO: do all of the variable names need to be like p_76450_ etc.? is this to be compatible with forge or minecraft?
 public abstract class BloodFluid extends FlowingFluid
 {
+
+    //gemini recc for non-mixins?
+    @Override
+    public FluidType getFluidType() // <-- Directly implement the required method
+    {
+        // Links to the FluidType object registered in your ModFluidTypes
+        return ModFluidTypes.BLOOD_TYPE.get(); 
+    }
+    
     @Override
     public Fluid getFlowing() {
         //enum for assets?
