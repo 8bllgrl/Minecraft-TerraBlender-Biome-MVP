@@ -12,15 +12,19 @@ import net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConf
 
 import java.util.function.BiConsumer;
 
+//TODO: FleshTendonFeature & HangingFleshTendonFeature
 public class BOPBaseFeatures {
     public static BOPTreeFeature<TaigaTreeConfiguration> REDWOOD_TREE;
 
     public static Feature<NoneFeatureConfiguration> MOSS_SPLATTER;
-
+    public static Feature<NoneFeatureConfiguration> FLESH_TENDON;
+    public static Feature<NoneFeatureConfiguration> HANGING_FLESH_TENDON;
 
     public static void registerFeatures(BiConsumer<ResourceLocation, Feature<?>> func) {
         REDWOOD_TREE = register(func, "redwood_tree", new RedwoodTreeFeature(TaigaTreeConfiguration.CODEC));
         MOSS_SPLATTER = register(func, "moss_splatter", new MossSplatterFeature(NoneFeatureConfiguration.CODEC));
+        FLESH_TENDON = register(func, "flesh_tendon", new FleshTendonFeature(NoneFeatureConfiguration.CODEC));
+        HANGING_FLESH_TENDON = register(func, "hanging_flesh_tendon", new HangingFleshTendonFeature(NoneFeatureConfiguration.CODEC));
     }
 
     private static <C extends FeatureConfiguration, F extends Feature<C>> F register(BiConsumer<ResourceLocation, Feature<?>> func, String name, F feature) {
