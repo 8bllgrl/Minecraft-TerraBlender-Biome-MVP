@@ -40,6 +40,7 @@ public class TutorialMod
             regHelper.addRegistrar(Registries.CREATIVE_MODE_TAB, ModCreativeTab::registerCreativeTabs);
             regHelper.addRegistrar(Registries.PARTICLE_TYPE, ModParticles::registerParticles); // <-- Uncommented
         //    regHelper.addRegistrar(Registries.SOUND_EVENT, ModSounds::registerSounds); // <-- Uncommented (Assuming ModSounds exists)
+            regHelper.addRegistrar(Registries.SOUND_EVENT, ModSounds::registerSounds);
         }
 
     private static void addHandlers()
