@@ -27,6 +27,7 @@ public class BOPNetherFeatures
     public static final ResourceKey<ConfiguredFeature<?, ?>> POROUS_FLESH = BOPFeatureUtils.createKey("porous_flesh");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PUS_BUBBLES = BOPFeatureUtils.createKey("pus_bubbles");
     public static final ResourceKey<ConfiguredFeature<?, ?>> HAIR = BOPFeatureUtils.createKey("hair");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_BONE_SPINE = registerKey("nether_bone_spine");
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context)
     {

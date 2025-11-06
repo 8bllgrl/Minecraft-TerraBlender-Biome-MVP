@@ -52,7 +52,7 @@ public class ModBlocks {
         //nether
         BLOOD = register(func, new BloodBlock(BOPFluids.FLOWING_BLOOD, BlockBehaviour.Properties.of().replaceable().pushReaction(PushReaction.DESTROY).liquid().noCollission().mapColor(MapColor.CRIMSON_NYLIUM).sound(SoundType.EMPTY).strength(100.0F)), "blood");
         FLESH = register(func, new FleshBlock(BlockBehaviour.Properties.of().randomTicks().mapColor(MapColor.TERRACOTTA_RED).strength(0.4F)), "flesh");
-        POROUS_FLESH = register(func, new FleshBlock(BlockBehaviour.Properties.of().randomTicks().mapColor(MapColor.TERRACOTTA_RED).strength(0.4F)), "porous_flesh");
+        POROUS_FLESH = register(func, new FleshBlock(BlockBehaviour.Properties.of().randomTicks().mapColor(MapColor.TERRACOTTA_RED).strength(0.4F).sound(new SoundType(1.0F, 0.5F, SoundEvents.CORAL_BLOCK_BREAK, SoundEvents.CORAL_BLOCK_STEP, SoundEvents.CORAL_BLOCK_PLACE, SoundEvents.CORAL_BLOCK_HIT, SoundEvents.CORAL_BLOCK_FALL))), "porous_flesh");
         FLESH_TENDONS = register(func, new FleshTendonsBottomBlock(BlockBehaviour.Properties.of().pushReaction(PushReaction.DESTROY).mapColor(MapColor.TERRACOTTA_RED).noCollission().strength(0.2F)), "flesh_tendons");
         FLESH_TENDONS_STRAND = register(func, new FleshTendonsBlock(BlockBehaviour.Properties.of().pushReaction(PushReaction.DESTROY).mapColor(MapColor.TERRACOTTA_RED).noCollission().strength(0.2F)), "flesh_tendons_strand");
         EYEBULB = register(func, new EyebulbBlock(BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_RED).pushReaction(PushReaction.DESTROY).noCollission().strength(0.2F)), "eyebulb");
