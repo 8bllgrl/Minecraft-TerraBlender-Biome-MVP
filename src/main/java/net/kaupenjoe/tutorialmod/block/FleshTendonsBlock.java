@@ -1,7 +1,9 @@
-package biomesoplenty.block;
+package net.kaupenjoe.tutorialmod.block;
 
 import biomesoplenty.api.block.BOPBlocks;
 import biomesoplenty.init.ModTags;
+import net.kaupenjoe.tutorialmod.api.block.BOPBlocks;
+import net.kaupenjoe.tutorialmod.init.ModTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.Block;

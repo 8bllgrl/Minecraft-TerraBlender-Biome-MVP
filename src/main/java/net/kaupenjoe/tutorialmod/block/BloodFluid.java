@@ -1,11 +1,11 @@
-package biomesoplenty.block;
+package net.kaupenjoe.tutorialmod.block;
 
-import biomesoplenty.api.block.BOPFluids;
-import biomesoplenty.init.ModParticles;
+import net.kaupenjoe.tutorialmod.api.block.BOPFluids;
 import net.kaupenjoe.tutorialmod.api.block.BOPBlocks;
 import net.kaupenjoe.tutorialmod.api.item.BOPItems;
 import net.kaupenjoe.tutorialmod.api.sound.BOPSounds;
 import net.kaupenjoe.tutorialmod.init.ModFluidTypes;
+import net.kaupenjoe.tutorialmod.init.ModParticles;
 import net.kaupenjoe.tutorialmod.init.ModTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

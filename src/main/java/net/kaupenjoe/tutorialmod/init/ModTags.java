@@ -48,8 +48,8 @@ public class ModTags
         public static final TagKey<Block> TIDEPOOL_REPLACEABLE = create(new ResourceLocation(TutorialMod.MOD_ID, "tidepool_replaceable"));
 
         //nether
-        public static final TagKey<Block> FLESH = create(new ResourceLocation(BiomesOPlenty.MOD_ID, "flesh"));
-        public static final TagKey<Block> FLESH_DECORATION_PLACEABLE = create(new ResourceLocation(BiomesOPlenty.MOD_ID, "flesh_decoration_placeable"));
+//        public static final TagKey<Block> FLESH = create(new ResourceLocation(TutorialMod.MOD_ID, "flesh"));
+//        public static final TagKey<Block> FLESH_DECORATION_PLACEABLE = create(new ResourceLocation(TutorialMod.MOD_ID, "flesh_decoration_placeable"));
         //TODO: unsure if blackstone is needed 
         // public static final TagKey<Block> BLACKSTONE_DECORATION_PLACEABLE = create(new ResourceLocation(BiomesOPlenty.MOD_ID, "blackstone_decoration_placeable"));
 

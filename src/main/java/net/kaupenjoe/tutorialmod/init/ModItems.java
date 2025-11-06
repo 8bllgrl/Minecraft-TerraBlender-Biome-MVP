@@ -2,6 +2,7 @@ package net.kaupenjoe.tutorialmod.init;
 
 import net.kaupenjoe.tutorialmod.TutorialMod;
 import net.kaupenjoe.tutorialmod.api.block.BOPBlocks;
+import net.kaupenjoe.tutorialmod.api.block.BOPFluids;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.*;
 

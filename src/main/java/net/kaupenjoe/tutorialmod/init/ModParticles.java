@@ -1,6 +1,6 @@
-package biomesoplenty.init;
+package net.kaupenjoe.tutorialmod.init;
 
-import biomesoplenty.core.BiomesOPlenty;
+import net.kaupenjoe.tutorialmod.TutorialMod;
 import net.minecraft.core.particles.ParticleOptions;
 import net.minecraft.core.particles.ParticleType;
 import net.minecraft.core.particles.SimpleParticleType;
@@ -26,7 +26,7 @@ public class ModParticles
 
     private static <T extends ParticleType<? extends ParticleOptions>> T register(BiConsumer<ResourceLocation, ParticleType<?>> func, String name, T particle)
     {
-        func.accept(new ResourceLocation(BiomesOPlenty.MOD_ID, name), particle);
+        func.accept(new ResourceLocation(TutorialMod.MOD_ID, name), particle);
         return particle;
     }
 }
