@@ -1,22 +1,17 @@
 package net.kaupenjoe.tutorialmod.init;
 
 import net.kaupenjoe.tutorialmod.TutorialMod;
-import net.kaupenjoe.tutorialmod.block.DeadBranchBlock;
-import net.kaupenjoe.tutorialmod.block.SaplingBlockBOP;
-import net.kaupenjoe.tutorialmod.block.SpanishMossBlock;
-import net.kaupenjoe.tutorialmod.block.SpanishMossBottomBlock;
+import net.kaupenjoe.tutorialmod.api.block.BOPFluids;
+import net.kaupenjoe.tutorialmod.block.*;
 import net.kaupenjoe.tutorialmod.block.trees.BOPTreeGrowers;
-import net.kaupenjoe.tutorialmod.worldgen.BOPSurfaceRuleData;
+import net.kaupenjoe.tutorialmod.util.worldgen.BOPSurfaceRuleData;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.sounds.SoundEvents;
-import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.*;
-import net.minecraft.world.level.block.PressurePlateBlock.Sensitivity;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
@@ -28,6 +23,8 @@ import java.util.function.BiConsumer;
 
 import static net.kaupenjoe.tutorialmod.api.block.BOPBlocks.*;
 
+//TODO: check 1.20.1 version
+//double check needed ones
 public class ModBlocks {
     public static void setup(BiConsumer<ResourceLocation, Block> func) {
         registerBlocks(func);

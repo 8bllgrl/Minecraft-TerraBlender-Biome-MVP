@@ -1,4 +1,4 @@
-package net.kaupenjoe.tutorialmod.worldgen.carver;
+package net.kaupenjoe.tutorialmod.util.worldgen.carver;
 
 import net.kaupenjoe.tutorialmod.TutorialMod;
 import net.minecraft.resources.ResourceLocation;

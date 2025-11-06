@@ -1,6 +1,6 @@
 package net.kaupenjoe.tutorialmod.block.trees;
 
-import net.kaupenjoe.tutorialmod.worldgen.feature.BOPTreeFeatures;
+import net.kaupenjoe.tutorialmod.util.worldgen.feature.BOPTreeFeatures;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 

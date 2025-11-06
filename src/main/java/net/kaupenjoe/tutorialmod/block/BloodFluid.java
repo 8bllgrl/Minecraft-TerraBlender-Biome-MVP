@@ -34,6 +34,7 @@ import javax.annotation.Nullable;
 import java.util.Optional;
 
 //TODO: do all of the variable names need to be like p_76450_ etc.? is this to be compatible with forge or minecraft?
+//TODO: check for 1.20.1 version
 public abstract class BloodFluid extends FlowingFluid
 {
 

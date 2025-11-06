@@ -1,4 +1,4 @@
-package net.kaupenjoe.tutorialmod.worldgen;
+package net.kaupenjoe.tutorialmod.util.worldgen;
 
 import com.google.common.collect.ImmutableList;
 import net.kaupenjoe.tutorialmod.api.BOPBiomes;

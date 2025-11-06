@@ -1,10 +1,11 @@
-package net.kaupenjoe.tutorialmod.worldgen.feature;
+package net.kaupenjoe.tutorialmod.util.worldgen.feature;
 
 import net.kaupenjoe.tutorialmod.TutorialMod;
-import net.kaupenjoe.tutorialmod.worldgen.feature.configurations.TaigaTreeConfiguration;
-import net.kaupenjoe.tutorialmod.worldgen.feature.misc.MossSplatterFeature;
-import net.kaupenjoe.tutorialmod.worldgen.feature.tree.BOPTreeFeature;
-import net.kaupenjoe.tutorialmod.worldgen.feature.tree.RedwoodTreeFeature;
+import net.kaupenjoe.tutorialmod.util.worldgen.feature.configurations.TaigaTreeConfiguration;
+import net.kaupenjoe.tutorialmod.util.worldgen.feature.misc.FleshTendonFeature;
+import net.kaupenjoe.tutorialmod.util.worldgen.feature.misc.MossSplatterFeature;
+import net.kaupenjoe.tutorialmod.util.worldgen.feature.tree.BOPTreeFeature;
+import net.kaupenjoe.tutorialmod.util.worldgen.feature.tree.RedwoodTreeFeature;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
@@ -12,7 +13,6 @@ import net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConf
 
 import java.util.function.BiConsumer;
 
-//TODO: FleshTendonFeature & HangingFleshTendonFeature
 public class BOPBaseFeatures {
     public static BOPTreeFeature<TaigaTreeConfiguration> REDWOOD_TREE;
 
@@ -20,6 +20,7 @@ public class BOPBaseFeatures {
     public static Feature<NoneFeatureConfiguration> FLESH_TENDON;
     public static Feature<NoneFeatureConfiguration> HANGING_FLESH_TENDON;
 
+    //TODO: add HangingFleshTendonFeature
     public static void registerFeatures(BiConsumer<ResourceLocation, Feature<?>> func) {
         REDWOOD_TREE = register(func, "redwood_tree", new RedwoodTreeFeature(TaigaTreeConfiguration.CODEC));
         MOSS_SPLATTER = register(func, "moss_splatter", new MossSplatterFeature(NoneFeatureConfiguration.CODEC));

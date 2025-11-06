@@ -1,7 +1,7 @@
 package net.kaupenjoe.tutorialmod.block;
 
-import biomesoplenty.init.ModParticles;
 import net.kaupenjoe.tutorialmod.api.block.BOPBlocks;
+import net.kaupenjoe.tutorialmod.init.ModParticles;
 import net.kaupenjoe.tutorialmod.init.ModTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.util.RandomSource;
@@ -10,8 +10,11 @@ import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 
+//TODO: check 1.20.1 version
+//TODO: add HangingStrandBottomBlock
 public class FleshTendonsBottomBlock extends HangingStrandBottomBlock {
 
+    //TODO: which properties import?
     public FleshTendonsBottomBlock(Properties p_i241195_1_) {
         super(p_i241195_1_);
     }

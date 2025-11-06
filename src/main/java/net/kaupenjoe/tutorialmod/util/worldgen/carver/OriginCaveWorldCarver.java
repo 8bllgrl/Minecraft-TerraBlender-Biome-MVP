@@ -1,4 +1,4 @@
-package net.kaupenjoe.tutorialmod.worldgen.carver;
+package net.kaupenjoe.tutorialmod.util.worldgen.carver;
 
 import com.google.common.collect.ImmutableSet;
 import com.mojang.serialization.Codec;

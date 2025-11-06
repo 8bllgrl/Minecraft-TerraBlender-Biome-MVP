@@ -1,7 +1,7 @@
-package net.kaupenjoe.tutorialmod.worldgen.placement;
+package net.kaupenjoe.tutorialmod.util.worldgen.placement;
 
-import net.kaupenjoe.tutorialmod.worldgen.BOPPlacementUtils;
-import net.kaupenjoe.tutorialmod.worldgen.feature.BOPVegetationFeatures;
+import net.kaupenjoe.tutorialmod.util.worldgen.BOPPlacementUtils;
+import net.kaupenjoe.tutorialmod.util.worldgen.feature.BOPVegetationFeatures;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderGetter;
 import net.minecraft.core.registries.Registries;

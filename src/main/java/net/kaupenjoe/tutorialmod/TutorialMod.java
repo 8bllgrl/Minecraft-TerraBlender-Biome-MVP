@@ -1,12 +1,11 @@
 package net.kaupenjoe.tutorialmod;
 
-import glitchcore.event.EventManager;
 import glitchcore.util.Environment;
 import glitchcore.util.RegistryHelper;
 import net.kaupenjoe.tutorialmod.api.BOPAPI;
 import net.kaupenjoe.tutorialmod.init.*;
-import net.kaupenjoe.tutorialmod.worldgen.carver.BOPWorldCarvers;
-import net.kaupenjoe.tutorialmod.worldgen.feature.BOPBaseFeatures;
+import net.kaupenjoe.tutorialmod.util.worldgen.carver.BOPWorldCarvers;
+import net.kaupenjoe.tutorialmod.util.worldgen.feature.BOPBaseFeatures;
 import net.minecraft.core.registries.Registries;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -39,7 +38,7 @@ public class TutorialMod
             regHelper.addRegistrar(Registries.CARVER, BOPWorldCarvers::registerCarvers);
         //    regHelper.addRegistrar(Registries.ENTITY_TYPE, ModEntities::registerEntities);
             regHelper.addRegistrar(Registries.CREATIVE_MODE_TAB, ModCreativeTab::registerCreativeTabs);
-            regHelper.addRegistrar(Registries.PARTICLE_TYPE, biomesoplenty.init.ModParticles::registerParticles); // <-- Uncommented
+            regHelper.addRegistrar(Registries.PARTICLE_TYPE, ModParticles::registerParticles); // <-- Uncommented
         //    regHelper.addRegistrar(Registries.SOUND_EVENT, ModSounds::registerSounds); // <-- Uncommented (Assuming ModSounds exists)
         }
 

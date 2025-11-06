@@ -1,6 +1,7 @@
 package net.kaupenjoe.tutorialmod.biome;
 
 import net.kaupenjoe.tutorialmod.api.sound.BOPSounds;
+import net.kaupenjoe.tutorialmod.util.worldgen.placement.BOPNetherPlacements;
 import net.minecraft.core.HolderGetter;
 import net.minecraft.data.worldgen.BiomeDefaultFeatures;
 import net.minecraft.data.worldgen.Carvers;
@@ -16,7 +17,6 @@ import net.minecraft.world.level.biome.BiomeSpecialEffects;
 import net.minecraft.world.level.levelgen.GenerationStep;
 import net.minecraft.world.level.levelgen.carver.ConfiguredWorldCarver;
 import net.minecraft.world.level.levelgen.placement.PlacedFeature;
-import net.kaupenjoe.tutorialmod.worldgen.BOPNetherPlacements; // need to make sure this exists
 import net.minecraft.world.level.biome.MobSpawnSettings;
 
 public class BOPNetherBiomes
@@ -43,6 +43,7 @@ public class BOPNetherBiomes
         // Custom Features for Visceral Heap
         addFeature(biomeBuilder, GenerationStep.Decoration.UNDERGROUND_DECORATION, BOPNetherPlacements.BLOOD_LAKE);
         addFeature(biomeBuilder, GenerationStep.Decoration.UNDERGROUND_DECORATION, BOPNetherPlacements.BLOOD_SPRING);
+        //TODO: add NETHER_BONE_SPINE
         addFeature(biomeBuilder, GenerationStep.Decoration.UNDERGROUND_DECORATION, BOPNetherPlacements.NETHER_BONE_SPINE);
         addFeature(biomeBuilder, GenerationStep.Decoration.UNDERGROUND_DECORATION, BOPNetherPlacements.FLESH_TENDON);
         addFeature(biomeBuilder, GenerationStep.Decoration.UNDERGROUND_DECORATION, BOPNetherPlacements.HANGING_FLESH_TENDONS);

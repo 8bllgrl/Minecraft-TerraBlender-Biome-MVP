@@ -7,7 +7,7 @@ package net.kaupenjoe.tutorialmod.biome;
 //import biomesoplenty.worldgen.placement.BOPMiscOverworldPlacements;
 //import biomesoplenty.worldgen.placement.BOPVegetationPlacements;
 
-import net.kaupenjoe.tutorialmod.worldgen.placement.BOPVegetationPlacements;
+import net.kaupenjoe.tutorialmod.util.worldgen.placement.BOPVegetationPlacements;
 import net.minecraft.core.HolderGetter;
 import net.minecraft.core.particles.ParticleOptions;
 import net.minecraft.data.worldgen.BiomeDefaultFeatures;

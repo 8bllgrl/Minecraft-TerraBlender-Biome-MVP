@@ -2,10 +2,10 @@ package net.kaupenjoe.tutorialmod.init;
 
 import net.kaupenjoe.tutorialmod.api.BOPBiomes;
 import net.kaupenjoe.tutorialmod.biome.BOPOverworldBiomes;
-import net.kaupenjoe.tutorialmod.worldgen.BOPNetherRegionCommon;
-import net.kaupenjoe.tutorialmod.worldgen.BOPOverworldRegionPrimary;
-import net.kaupenjoe.tutorialmod.worldgen.BOPOverworldRegionRare;
-import net.kaupenjoe.tutorialmod.worldgen.BOPOverworldRegionSecondary;
+import net.kaupenjoe.tutorialmod.util.worldgen.BOPNetherRegionCommon;
+import net.kaupenjoe.tutorialmod.util.worldgen.BOPOverworldRegionPrimary;
+import net.kaupenjoe.tutorialmod.util.worldgen.BOPOverworldRegionRare;
+import net.kaupenjoe.tutorialmod.util.worldgen.BOPOverworldRegionSecondary;
 import net.minecraft.core.HolderGetter;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
@@ -14,13 +14,7 @@ import net.minecraft.data.worldgen.BootstapContext;
 import net.minecraft.world.level.levelgen.carver.ConfiguredWorldCarver;
 import net.minecraft.world.level.levelgen.placement.PlacedFeature;
 import net.minecraft.world.entity.npc.VillagerType;
-import net.minecraft.world.level.biome.Biome;
-import net.minecraft.world.level.levelgen.carver.ConfiguredWorldCarver;
-import net.minecraft.world.level.levelgen.placement.PlacedFeature;
 import terrablender.api.Regions;
-
-import java.lang.reflect.Field;
-import java.util.Map;
 
 public class ModBiomes {
     public static void setup() {

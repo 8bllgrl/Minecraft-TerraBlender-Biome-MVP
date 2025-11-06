@@ -1,4 +1,4 @@
-package net.kaupenjoe.tutorialmod.worldgen.feature.configurations;
+package net.kaupenjoe.tutorialmod.util.worldgen.feature.configurations;
 
 import com.google.common.collect.Lists;
 import com.mojang.serialization.Codec;

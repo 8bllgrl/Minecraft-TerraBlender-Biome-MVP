@@ -1,4 +1,4 @@
-package net.kaupenjoe.tutorialmod.worldgen;
+package net.kaupenjoe.tutorialmod.util.worldgen;
 
 import net.kaupenjoe.tutorialmod.api.BOPBiomes;
 import net.kaupenjoe.tutorialmod.TutorialMod;

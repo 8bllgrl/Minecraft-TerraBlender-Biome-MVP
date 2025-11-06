@@ -1,7 +1,7 @@
-package net.kaupenjoe.tutorialmod.worldgen;
+package net.kaupenjoe.tutorialmod.util.worldgen;
 
 import net.kaupenjoe.tutorialmod.TutorialMod;
-import net.kaupenjoe.tutorialmod.worldgen.placement.BOPVegetationPlacements;
+import net.kaupenjoe.tutorialmod.util.worldgen.placement.BOPVegetationPlacements;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstapContext;
 import net.minecraft.resources.ResourceKey;

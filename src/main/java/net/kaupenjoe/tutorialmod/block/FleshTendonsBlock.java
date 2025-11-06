@@ -1,7 +1,5 @@
 package net.kaupenjoe.tutorialmod.block;
 
-import biomesoplenty.api.block.BOPBlocks;
-import biomesoplenty.init.ModTags;
 import net.kaupenjoe.tutorialmod.api.block.BOPBlocks;
 import net.kaupenjoe.tutorialmod.init.ModTags;
 import net.minecraft.core.BlockPos;
@@ -10,8 +8,11 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.GrowingPlantHeadBlock;
 import net.minecraft.world.level.block.state.BlockState;
 
+//TODO: need to add HangingStrandBlock
+//TODO: check 1.20.1 version
 public class FleshTendonsBlock extends HangingStrandBlock
 {
+    //TODO: which Properties?
     public FleshTendonsBlock(Properties properties) {
         super(properties);
     }

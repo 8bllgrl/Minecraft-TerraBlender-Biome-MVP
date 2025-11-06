@@ -1,7 +1,8 @@
-package net.kaupenjoe.tutorialmod.worldgen;
+package net.kaupenjoe.tutorialmod.util.worldgen;
+
 import com.mojang.datafixers.util.Pair;
 import net.kaupenjoe.tutorialmod.TutorialMod;
-import net.kaupenjoe.tutorialmod.biome.BOPOverworldBiomeBuilder;
+import net.kaupenjoe.tutorialmod.biome.BOPSecondaryOverworldBiomeBuilder;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
@@ -12,11 +13,11 @@ import terrablender.api.RegionType;
 
 import java.util.function.Consumer;
 
-public class BOPOverworldRegionPrimary extends Region
+public class BOPOverworldRegionSecondary extends Region
 {
-    public static final ResourceLocation LOCATION = new ResourceLocation(TutorialMod.MOD_ID, "overworld_primary");
+    public static final ResourceLocation LOCATION = new ResourceLocation(TutorialMod.MOD_ID, "overworld_secondary");
 
-    public BOPOverworldRegionPrimary(int weight)
+    public BOPOverworldRegionSecondary(int weight)
     {
         super(LOCATION, RegionType.OVERWORLD, weight);
     }
@@ -24,6 +25,6 @@ public class BOPOverworldRegionPrimary extends Region
     @Override
     public void addBiomes(Registry<Biome> registry, Consumer<Pair<Climate.ParameterPoint, ResourceKey<Biome>>> mapper)
     {
-        (new BOPOverworldBiomeBuilder()).addBiomes(registry, mapper);
+        (new BOPSecondaryOverworldBiomeBuilder()).addBiomes(registry, mapper);
     }
 }

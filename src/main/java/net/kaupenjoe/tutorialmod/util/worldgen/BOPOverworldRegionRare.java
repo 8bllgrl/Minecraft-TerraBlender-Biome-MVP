@@ -1,4 +1,4 @@
-package net.kaupenjoe.tutorialmod.worldgen;
+package net.kaupenjoe.tutorialmod.util.worldgen;
 
 import com.mojang.datafixers.util.Pair;
 import net.kaupenjoe.tutorialmod.TutorialMod;

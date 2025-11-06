@@ -1,8 +1,8 @@
-package net.kaupenjoe.tutorialmod.worldgen.feature;
+package net.kaupenjoe.tutorialmod.util.worldgen.feature;
 
 import net.kaupenjoe.tutorialmod.api.block.BOPBlocks;
-import net.kaupenjoe.tutorialmod.worldgen.BOPFeatureUtils;
-import net.kaupenjoe.tutorialmod.worldgen.feature.configurations.TaigaTreeConfiguration;
+import net.kaupenjoe.tutorialmod.util.worldgen.BOPFeatureUtils;
+import net.kaupenjoe.tutorialmod.util.worldgen.feature.configurations.TaigaTreeConfiguration;
 import net.minecraft.data.worldgen.BootstapContext;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.level.block.Block;

@@ -8,6 +8,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.biome.Biome;
 import java.util.List;
 
+//TODO: check 1.20.1 version
 public class BOPBiomes {
     private static List<ResourceKey<Biome>> overworldBiomes = Lists.newArrayList();
     private static List<ResourceKey<Biome>> allBiomes = Lists.newArrayList();

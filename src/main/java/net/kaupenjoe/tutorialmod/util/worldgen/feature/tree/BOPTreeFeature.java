@@ -1,8 +1,8 @@
-package net.kaupenjoe.tutorialmod.worldgen.feature.tree;
+package net.kaupenjoe.tutorialmod.util.worldgen.feature.tree;
 
 import com.mojang.serialization.Codec;
 import net.kaupenjoe.tutorialmod.api.block.BOPBlocks;
-import net.kaupenjoe.tutorialmod.worldgen.feature.configurations.BOPTreeConfiguration;
+import net.kaupenjoe.tutorialmod.util.worldgen.feature.configurations.BOPTreeConfiguration;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.tags.BlockTags;

@@ -1,4 +1,4 @@
-package net.kaupenjoe.tutorialmod.worldgen.feature.misc;
+package net.kaupenjoe.tutorialmod.util.worldgen.feature.misc;
 
 
 import com.mojang.serialization.Codec;

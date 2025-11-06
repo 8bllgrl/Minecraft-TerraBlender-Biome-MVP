@@ -1,9 +1,9 @@
-package net.kaupenjoe.tutorialmod.worldgen.feature;
+package net.kaupenjoe.tutorialmod.util.worldgen.feature;
 
 import net.kaupenjoe.tutorialmod.api.block.BOPBlocks;
 import net.kaupenjoe.tutorialmod.api.block.BOPFluids;
 import net.kaupenjoe.tutorialmod.init.ModTags;
-import net.kaupenjoe.tutorialmod.worldgen.BOPFeatureUtils;
+import net.kaupenjoe.tutorialmod.util.worldgen.BOPFeatureUtils;
 import net.minecraft.core.HolderSet;
 import net.minecraft.data.worldgen.BootstapContext;
 import net.minecraft.data.worldgen.features.FeatureUtils;
@@ -26,6 +26,7 @@ public class BOPNetherFeatures
     public static final ResourceKey<ConfiguredFeature<?, ?>> HANGING_FLESH_TENDON = BOPFeatureUtils.createKey("hanging_flesh_tendon");
     public static final ResourceKey<ConfiguredFeature<?, ?>> POROUS_FLESH = BOPFeatureUtils.createKey("porous_flesh");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PUS_BUBBLES = BOPFeatureUtils.createKey("pus_bubbles");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> HAIR = BOPFeatureUtils.createKey("hair");
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context)
     {

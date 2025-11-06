@@ -1,8 +1,8 @@
-package net.kaupenjoe.tutorialmod.worldgen.feature;
+package net.kaupenjoe.tutorialmod.util.worldgen.feature;
 
 import com.google.common.collect.ImmutableList;
-import net.kaupenjoe.tutorialmod.worldgen.BOPFeatureUtils;
-import net.kaupenjoe.tutorialmod.worldgen.placement.BOPTreePlacements;
+import net.kaupenjoe.tutorialmod.util.worldgen.placement.BOPTreePlacements;
+import net.kaupenjoe.tutorialmod.util.worldgen.BOPFeatureUtils;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderGetter;
 import net.minecraft.core.registries.Registries;

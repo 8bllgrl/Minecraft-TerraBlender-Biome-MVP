@@ -30,6 +30,7 @@
 //apparently needs to be this?
 package net.kaupenjoe.tutorialmod.init;
 
+import net.kaupenjoe.tutorialmod.block.BloodFluid;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.material.FlowingFluid;
 import net.minecraft.world.level.material.Fluid;
@@ -44,8 +45,8 @@ public class ModFluids
 {
     public static void registerFluids(BiConsumer<ResourceLocation, Fluid> func)
     {
-        FLOWING_BLOOD = (FlowingFluid)register(func, new biomesoplenty.block.BloodFluid.Flowing(), "flowing_blood");
-        BLOOD = register(func, new biomesoplenty.block.BloodFluid.Source(), "blood");
+        FLOWING_BLOOD = (FlowingFluid)register(func, new BloodFluid.Flowing(), "flowing_blood");
+        BLOOD = register(func, new BloodFluid.Source(), "blood");
     }
 
     private static Fluid register(BiConsumer<ResourceLocation, Fluid> func, Fluid fluid, String name)
