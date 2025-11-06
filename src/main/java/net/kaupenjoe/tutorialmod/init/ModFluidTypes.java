@@ -62,9 +62,9 @@ public class ModFluidTypes
                 // Client-side properties: textures and fog
                 consumer.accept(new IClientFluidTypeExtensions()
                 {
-                    private static final ResourceLocation BLOOD_UNDERWATER = new ResourceLocation("biomesoplenty:textures/block/blood_underwater.png"),
-                            BLOOD_STILL = new ResourceLocation("biomesoplenty:block/blood_still"),
-                            BLOOD_FLOW = new ResourceLocation("biomesoplenty:block/blood_flow");
+                    private static final ResourceLocation BLOOD_UNDERWATER = new ResourceLocation("tutorialmod:textures/block/blood_underwater.png"),
+                            BLOOD_STILL = new ResourceLocation("tutorialmod:block/blood_still"),
+                            BLOOD_FLOW = new ResourceLocation("tutorialmod:block/blood_flow");
 
                     @Override
                     public ResourceLocation getStillTexture() { return BLOOD_STILL; }
