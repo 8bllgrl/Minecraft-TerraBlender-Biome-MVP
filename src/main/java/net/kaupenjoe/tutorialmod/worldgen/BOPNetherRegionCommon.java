@@ -1,6 +1,6 @@
 package net.kaupenjoe.tutorialmod.worldgen;
 
-import net.kaupenjoe.tutorialmod.api.biome.BOPBiomes;
+import net.kaupenjoe.tutorialmod.api.BOPBiomes;
 import net.kaupenjoe.tutorialmod.TutorialMod;
 import net.kaupenjoe.tutorialmod.util.biome.BiomeUtil;
 import com.mojang.datafixers.util.Pair;
@@ -13,6 +13,8 @@ import net.minecraft.world.level.biome.Climate;
 import terrablender.api.Region;
 import terrablender.api.RegionType;
 import java.util.function.Consumer;
+
+import static terrablender.api.ParameterUtils.Temperature.FULL_RANGE;
 
 public class BOPNetherRegionCommon extends Region
 {
@@ -30,7 +32,6 @@ public class BOPNetherRegionCommon extends Region
         // Add Visceral Heap across the entire climate space (FULL_RANGE)
         
         // this also controls the biome's rarity, since it's the only biome in this region here, it will spawn frequently, but allows for vanilla biomes to spawn too
-        this.addBiome(mapper, FULL_RANGE, FULL_RANGE, FULL_RANGE, FULL_RANGE, FULL_RANGE, FULL_RANGE, 0.0F, 
-                      BiomeUtil.biomeOrFallback(registry, BOPBiomes.VISCERAL_HEAP, Biomes.NETHER_WASTES));
+        this.addBiome(mapper, Climate.Parameter.point(0.0F), Climate.Parameter.point(0.5F), Climate.Parameter.point(0.0F), Climate.Parameter.point(0.0F), Climate.Parameter.point(0.0F), Climate.Parameter.point(0.0F), 0.375F, BiomeUtil.biomeOrFallback(registry, BOPBiomes.VISCERAL_HEAP, Biomes.WARPED_FOREST));
     }
 }

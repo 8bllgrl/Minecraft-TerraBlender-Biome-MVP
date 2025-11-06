@@ -27,6 +27,7 @@ import java.util.Map;
 import java.util.function.Consumer;
 import java.util.function.Supplier;
 
+//TODO: Double check logic for 1.20.1 https://github.com/Glitchfiend/BiomesOPlenty/blob/1.20.1/forge/src/main/java/biomesoplenty/forge/init/ModFluidTypes.java
 public class ModFluidTypes
 {
     public static RegistryObject<FluidType> BLOOD_TYPE;

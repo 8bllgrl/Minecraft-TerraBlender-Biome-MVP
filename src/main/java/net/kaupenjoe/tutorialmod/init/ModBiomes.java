@@ -2,6 +2,7 @@ package net.kaupenjoe.tutorialmod.init;
 
 import net.kaupenjoe.tutorialmod.api.BOPBiomes;
 import net.kaupenjoe.tutorialmod.biome.BOPOverworldBiomes;
+import net.kaupenjoe.tutorialmod.worldgen.BOPNetherRegionCommon;
 import net.kaupenjoe.tutorialmod.worldgen.BOPOverworldRegionPrimary;
 import net.kaupenjoe.tutorialmod.worldgen.BOPOverworldRegionRare;
 import net.kaupenjoe.tutorialmod.worldgen.BOPOverworldRegionSecondary;
