@@ -16,19 +16,10 @@ public class ModSounds
 {
     public static void registerSounds(BiConsumer<ResourceLocation, SoundEvent> func)
     {
-        MUSIC_BIOME_ORIGIN_VALLEY = registerForHolder(func, "music.overworld.origin_valley");
-        MUSIC_BIOME_CRYSTALLINE_CHASM = registerForHolder(func, "music.nether.crystalline_chasm");
-        MUSIC_BIOME_ERUPTING_INFERNO = registerForHolder(func, "music.nether.erupting_inferno");
-        MUSIC_BIOME_UNDERGROWTH = registerForHolder(func, "music.nether.undergrowth");
         MUSIC_BIOME_VISCERAL_HEAP = registerForHolder(func, "music.nether.visceral_heap");
-        MUSIC_BIOME_WITHERED_ABYSS = registerForHolder(func, "music.nether.withered_abyss");
-
-        MUSIC_DISC_WANDERER = register(func, "music_disc.wanderer");
-
         BLOOD_AMBIENT = register(func, "block.blood.ambient");
         FLESH_TENDON_DRIP = register(func, "block.flesh_tendon.drip");
         PUS_BUBBLE_POP = register(func, "block.pus_bubble.pop");
-        SPIDER_EGG_BREAK = register(func, "block.spider_egg.break");
     }
 
     private static Holder<SoundEvent> registerForHolder(BiConsumer<ResourceLocation, SoundEvent> func, String name)
