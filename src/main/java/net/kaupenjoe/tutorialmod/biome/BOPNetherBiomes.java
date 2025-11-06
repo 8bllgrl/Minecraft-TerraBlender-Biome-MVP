@@ -1,5 +1,7 @@
 package net.kaupenjoe.tutorialmod.biome;
 
+import net.minecraft.data.worldgen.placement.NetherPlacements;
+import net.minecraft.data.worldgen.placement.OrePlacements;
 import net.kaupenjoe.tutorialmod.api.sound.BOPSounds;
 import net.kaupenjoe.tutorialmod.util.worldgen.placement.BOPNetherPlacements;
 import net.minecraft.core.HolderGetter;
@@ -38,6 +40,9 @@ public class BOPNetherBiomes
         // Biome features
         BiomeGenerationSettings.Builder biomeBuilder = new BiomeGenerationSettings.Builder(placedFeatureGetter, carverGetter);
         biomeBuilder.addCarver(GenerationStep.Carving.AIR, Carvers.NETHER_CAVE);
+        addFeature(biomeBuilder, GenerationStep.Decoration.UNDERGROUND_DECORATION, NetherPlacements.SPRING_OPEN);
+        addFeature(biomeBuilder, GenerationStep.Decoration.UNDERGROUND_DECORATION, OrePlacements.ORE_MAGMA);
+        addFeature(biomeBuilder, GenerationStep.Decoration.UNDERGROUND_DECORATION, NetherPlacements.SPRING_CLOSED);
         BiomeDefaultFeatures.addNetherDefaultOres(biomeBuilder);
 
         // Custom Features for Visceral Heap
@@ -60,6 +65,7 @@ public class BOPNetherBiomes
                 .fogColor(0x601F18) // Deep Red/Brown Fog
                 .ambientLoopSound(SoundEvents.AMBIENT_NETHER_WASTES_LOOP) // sound
                 .ambientMoodSound(new AmbientMoodSettings(SoundEvents.AMBIENT_SOUL_SAND_VALLEY_MOOD, 6000, 8, 2.0D)) // mood sound
+                .ambientAdditionsSound(new AmbientAdditionsSettings(SoundEvents.AMBIENT_CRIMSON_FOREST_ADDITIONS, 0.0111D)) // crimson additions sound
                 .backgroundMusic(Musics.createGameMusic(BOPSounds.MUSIC_BIOME_VISCERAL_HEAP)).build()) // music that occurs
             .mobSpawnSettings(spawnBuilder.build()).generationSettings(biomeBuilder.build()).build(); // mob spawn and biome gen
     }
